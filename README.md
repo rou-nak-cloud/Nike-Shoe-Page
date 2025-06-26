@@ -4,8 +4,7 @@ Welcome to **Shoe Store**, a clean and responsive product page built to practice
 
 ---
 # 🌐 Live Demo
-Coming soon...
-Or deploy it using Vercel, Netlify, or Render.
+(https://nike-shoe-page-theta.vercel.app/)
 
 ## 🚀 Features
 
