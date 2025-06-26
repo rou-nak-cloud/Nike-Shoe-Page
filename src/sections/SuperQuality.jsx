@@ -1,5 +1,6 @@
 import { shoe8 } from "../assets/images";
 import Button from "../components/Button";
+import { Link } from 'react-router-dom';
 
 const SuperQuality = () => {
   return (
@@ -21,10 +22,13 @@ const SuperQuality = () => {
         <p className='mt-6 lg:max-w-lg info-text'>
           Our dedication to detail and excellence ensures your satisfaction
         </p>
-        <div className='mt-11'>
+
+      <div className='mt-11'>
+        <Link to="/details">
           <Button label='View details' />
-          {/* todo: details page */}
-        </div>
+        </Link>
+      </div>
+
       </div>
 
       <div className='flex-1 flex justify-center items-center'>

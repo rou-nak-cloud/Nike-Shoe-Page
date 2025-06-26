@@ -4,9 +4,11 @@ const Button = ({ label, iconURL,
   backgroundColor,
   textColor,
   borderColor,
-  fullWidth }) => {
+  fullWidth,
+  onCLick }) => {
   return (
      <button
+    //  onClick={onCLick}
       className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full font-semibold transition-colors duration-500 ease-in-out
       ${
         backgroundColor

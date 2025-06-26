@@ -1,4 +1,6 @@
 import { useState } from "react";
+// import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { shoes, statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
@@ -8,6 +10,7 @@ import ShoeCard from "../components/ShoeCard";
 import Button from "../components/Button";
 
 const Hero = () => {
+    // const navigate = useNavigate();
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
@@ -32,7 +35,10 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Button label='Shop now' iconURL={arrowRight} />
+            {/* <Button label="Shop now" iconURL={arrowRight} onClick={() => navigate('/shop')} /> */}
+            <Link to="/shop">
+              <Button label="Shop now" iconURL={arrowRight} />
+            </Link>
 
         <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
           {statistics.map((stat, index) => (
